@@ -2,7 +2,7 @@ import os
 urlNew = 'https://www.kardionet.ru/public/process' #На программу
 #'Authorization': 'Bearer '+os.getenv(('BEARER')),
 headers = {
-  'Authorization': 'Bearer 2D8565ABDA6DE35ECED6DCD004B1B6B44937A1D6E4F081829796605D6862AEAF',
+  'Authorization': 'Bearer '+os.environ.get(('BEARER')),
   'Content-Type': 'application/json'
 }
 defaultDate = '18.10.2000'
